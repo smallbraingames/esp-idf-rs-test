@@ -1,0 +1,30 @@
+{
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "cargo": {
+          "buildScripts": {
+            "useRustcWrapper": true,
+            "overrideCommand": [
+              "cargo",
+              "+esp",
+              "check",
+              "--quiet",
+              "--workspace",
+              "--message-format=json",
+              "--all-targets"
+            ]
+          },
+          "allTargets": false,
+          "features": ["default"]
+        },
+        "procMacro": {
+          "enable": true
+        },
+        "diagnostics": {
+          "enable": true
+        }
+      }
+    }
+  }
+}
