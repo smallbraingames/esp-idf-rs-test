@@ -38,9 +38,6 @@ log = { version = "0.4", default-features = false }
 embuild = "0.32.0"
 
 [[package.metadata.esp-idf-sys.extra_components]]
-bindings_header = "bindings.h"
-
-[[package.metadata.esp-idf-sys.extra_components]]
-remote_component = { name = "espressif/esp-sr", version = "1.9.2" }
+remote_component = { name = "espressif/esp-sr", version = "1.6.0" }
 bindings_header = "bindings.h"
 bindings_module = "sr"
